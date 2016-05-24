@@ -1,5 +1,4 @@
 from __future__ import absolute_import
-from __future__ import unicode_literals
 
 from setuptools import find_packages
 from setuptools import setup
@@ -8,7 +7,7 @@ setup(
     name='check_swagger',
     description='pre-commit hook for validation swagger specs',
     url='https://github.com/jstewmon/check-swagger',
-    version='0.1.1',
+    version='0.1.2',
     author='Jonathan Stewmon',
     author_email='jstewmon@gmail.com',
     classifiers=[
