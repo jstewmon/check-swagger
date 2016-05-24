@@ -12,7 +12,7 @@ Add the following entry to `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: git://github.com/jstewmon/check-swagger
-  sha: v0.1.0
+  sha: v0.1.1
   hooks:
   - id: check-swagger
 ```
