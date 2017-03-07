@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 import argparse
 import codecs
+import json
 import sys
 from fnmatch import fnmatch
 
@@ -27,6 +28,8 @@ def main():
                 spec = yaml.safe_load(f)
                 if not isinstance(spec, dict):
                     raise SwaggerValidationError('root node is not a mapping')
+                # ensure the spec is valid JSON
+                spec = json.loads(json.dumps(spec))
                 validator = swagger_spec_validator.util.get_validator(spec, url)
                 validator.validate_spec(spec, url)
         except yaml.YAMLError as exc:
