@@ -7,7 +7,7 @@ setup(
     name='check_swagger',
     description='pre-commit hook for validation swagger specs',
     url='https://github.com/jstewmon/check-swagger',
-    version='0.1.3',
+    version='0.1.4',
     author='Jonathan Stewmon',
     author_email='jstewmon@gmail.com',
     classifiers=[
